@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Write It Up!</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="navbar">
+        <nav class="navbar navbar-dark fixed-top color1">
+          <div class="container-fluid">
+            <a class="navbar-brand align" href="#">Hey There!</a>
+            <button
+              class="navbar-toggler color1"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark color1"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header color1">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Let's take a tour!
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-dark"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body color1">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="#landing"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mission">Our Mission</a>
+                    <a class="nav-link" href="#idea">Core idea</a>
+                  </li>
+                  <li class="nav-item dropdown color1">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Our Work
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li>
+                        <a class="dropdown-item" href="#learning">Learning</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#education">Education</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#designing">Designing</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-link" href="#">Contact </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="landing" id="landing">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 hero-text">
+            <span class="auto-type-1"></span>
+            <p class="text-area">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              nemo maxime, ipsa dolorum in voluptates accusantium quasi placeat,
+              omnis, quidem facere excepturi sunt! Eaque voluptatibus minima
+              voluptatem ipsam ratione quod? Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit.
+            </p>
+            <button
+              type="button"
+              class="btn btn-main btn-outline-secondary"
+              id="liveToastBtn"
+            >
+              <i class="fa-brands fa-google-play"></i>
+              Download
+            </button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div
+                id="liveToast"
+                class="toast"
+                role="alert"
+                aria-live="assertive"
+                aria-atomic="true"
+              >
+                <div class="toast-header">
+                  <img
+                    src="/Resources/img/4.jpg"
+                    class="rounded me-2 adj"
+                    alt="..."
+                  />
+                  <strong class="me-auto">Hi! There</strong>
+                  <span class="vh-1">Chitransh</span>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="toast-body">
+                  This is a concept only product! <br />For more you can visit
+                  <a href="https://chitranshs.github.io"
+                    >chitranshs.github.io</a
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-main btn-dark"
+              data-bs-toggle="popover"
+              data-bs-title="Message from Chitransh"
+              data-bs-content="Hey! This is just a concept product!"
+            >
+              Download
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 hero-side">
+            <div class="wall"></div>
+            <div class="wall2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-1" id="mission">
+        <div class="row">
+          <div class="wrapper">
+            <div class="head-text">What we do?</div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6 flex">
+            <div class="hero-side"></div>
+            <div class="hello"></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 main-text">
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              vitae. Impedit facilis eius architecto perferendis facere
+              mollitia, error, accusantium neque autem vel nostrum repellendus
+              dolor ad aliquid tenetur distinctio earum.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Error nihil, repellat
+              dolores consequuntur minima hic, animi, obcaecati eos rerum maxime
+              voluptatibus ipsum dicta voluptatum voluptates esse quam! Amet,
+              asperiores dolore.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2" id="idea">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8 h-70">
+            <div class="head-text">
+              Converting Handwriting to
+              <span class="auto-type-2">Font</span>
+            </div>
+
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              quidem, numquam, ipsam inventore impedit praesentium hic eum
+              commodi ea eligendi libero, pariatur quis ex ut est
+              necessitatibus. Optio, quisquam veniam.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum ut perspiciatis aliquam tempore saepe illo vel laborum
+              voluptates numquam. Laudantium recusandae quos sed quibusdam, quas
+              animi magni. Voluptate, earum eius. Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Mollitia molestias exercitationem
+              neque ea nihil nisi totam dolor magni? Eum, repudiandae laboriosam
+              asperiores sit id similique odit error dignissimos voluptate
+              veritatis!
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto cum tenetur sunt ipsum corrupti eius natus adipisci vel
+              dignissimos nulla eaque possimus recusandae, soluta, facilis
+              magnam optio quo sapiente. Reprehenderit.
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="hero-side"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-3" id="learning">
+        <div class="wrapper">
+          <div class="head-text">Our Work</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-7 h-80">
+            <div class="wrap">
+              <div class="subhead-text">Learning</div>
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              vitae. Impedit facilis eius architecto perferendis facere
+              mollitia, error, accusantium neque autem vel nostrum repellendus
+              dolor ad aliquid tenetur distinctio earum.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Error nihil, repellat
+              dolores consequuntur minima hic, animi, obcaecati eos rerum maxime
+              voluptatibus ipsum dicta voluptatum voluptates esse quam! Amet,
+              asperiores dolore.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <div class="hero-side"></div>
+          </div>
+        </div>
+        <div class="sp-20"></div>
+        <div class="row color1" id="education">
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <div class="hero-side2"></div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 h-80">
+            <div class="wrap">
+              <div class="subhead-text color-white">Education</div>
+            </div>
+            <div class="text2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              vitae. Impedit facilis eius architecto perferendis facere
+              mollitia, error, accusantium neque autem vel nostrum repellendus
+              dolor ad aliquid tenetur distinctio earum.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Error nihil, repellat
+              dolores consequuntur minima hic, animi, obcaecati eos rerum maxime
+              voluptatibus ipsum dicta voluptatum voluptates esse quam! Amet,
+              asperiores dolore.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?
+            </div>
+          </div>
+        </div>
+        <div class="row" id="designing">
+          <div class="col-lg-7 col-md-7 col-sm-7 h-80">
+            <div class="wrap">
+              <div class="subhead-text">Designing</div>
+            </div>
+            <div class="text3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              vitae. Impedit facilis eius architecto perferendis facere
+              mollitia, error, accusantium neque autem vel nostrum repellendus
+              dolor ad aliquid tenetur distinctio earum.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Error nihil, repellat
+              dolores consequuntur minima hic, animi, obcaecati eos rerum maxime
+              voluptatibus ipsum dicta voluptatum voluptates esse quam! Amet,
+              asperiores dolore.
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, laudantium quasi! Sit tempora corporis ratione
+              quidem impedit ullam sunt, error delectus maiores soluta libero
+              reprehenderit, enim eum laudantium in numquam?
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-5">
+            <div class="hero-side3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section-4" id="pricing">
+        <div class="wrapper">
+          <div class="head-text">
+            <span class="strikethrough">Pricing</span>
+          </div>
+          <div class="col-lg-12 subhead-text sp-20 h-70">
+            No prices. This is free product
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="warning">
+      <div class="img"></div>
+      <div class="row">
+        <div class="col-sm-12 warning-message vh-2">
+          Hey there!<br />
+          This website is yet to be made responsive<br />
+          This website is only viewable in landscape mode<br />
+          <h4>Please rotate your screen</h4>
+          <br />
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/type-auto.js"></script>
+</html>

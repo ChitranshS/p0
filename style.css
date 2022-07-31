@@ -1,0 +1,442 @@
+@font-face {
+  font-family: e;
+  src: url(/Resources/Fonts/e.otf);
+
+  /* e>c */
+}
+@font-face {
+  font-family: a;
+  src: url(/Resources/Fonts/a1.otf);
+}
+/* Landscape section */
+#warning-message {
+  display: none;
+}
+@media only screen and (orientation: portrait) {
+  #wrapper {
+    display: none;
+  }
+  .row {
+    height: 60vh;
+  }
+  .img {
+    background: url(/Resources/img/5_1.png);
+    background-size: 30vh;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5vh;
+    height: 40vh;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+  }
+  .warning-message {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .warning {
+    display: none;
+  }
+}
+/* Main Code */
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* General Classes */
+.color1 {
+  background-color: #05445e;
+}
+.hide {
+  display: none;
+}
+.h-50 {
+  height: 50vh;
+}
+.h-60 {
+  height: 60vh;
+}
+.h-70 {
+  height: 70vh;
+  overflow-y: hidden;
+}
+.h-80 {
+  height: 80vh;
+}
+.h-90 {
+  height: 90vh;
+}
+.flex {
+  display: flex;
+}
+.sp-20 {
+  padding: 5vh;
+}
+.color-white {
+  color: white;
+}
+.adj {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 14vh;
+}
+.vh-1 {
+  font-size: 1.5vh;
+}
+.vh-2 {
+  font-size: 3vh;
+  font-family: a;
+  position: relative;
+  top: 30vh;
+  left: 2vw;
+}
+.align {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: 45vw;
+}
+/* Landing Starts */
+
+.landing {
+  z-index: 0;
+  margin: 40px auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* position: absolute;
+    top: -8vh; */
+}
+.hero-text {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  font-size: 17vh;
+  text-align: center;
+  padding: 20vh 10vh;
+  height: 95vh;
+  overflow-y: hidden;
+}
+
+.hero-text .auto-type-1 {
+  position: relative;
+  width: auto;
+  font-family: e;
+}
+.typed-cursor {
+  /* display: ; */
+  position: relative;
+  left: 2vh;
+  height: auto;
+  width: 1vh;
+  bottom: 1vh;
+}
+.hero-side {
+  display: flex;
+  flex-direction: row;
+}
+.hero-side .wall {
+  background: url(/Resources/img/1_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 50vw;
+  position: absolute;
+  z-index: 0;
+  animation: wall 2.4s ease-in-out;
+}
+.hero-side .wall2 {
+  background: url(/Resources/img/1_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 50vw;
+  position: absolute;
+  z-index: 0;
+  animation: wall 2s ease-in-out;
+}
+@keyframes wall {
+  0% {
+    margin-left: 10vw;
+  }
+  50% {
+    margin-left: 0;
+  }
+}
+
+.hero-text .text-area {
+  font-size: 2vh;
+  text-align: center;
+  padding: 2rem;
+  margin: auto 1%;
+  width: 100%;
+}
+.hero-text .btn-main {
+  position: relative;
+  display: inline-block;
+  top: -3vh;
+}
+
+/* Section 1 Starts */
+.section-1 {
+  background-color: white;
+  color: black;
+  position: relative;
+  top: -5.5vh;
+}
+.section-1 .wrapper {
+  text-align: center;
+  padding: 3vh;
+  background-color: #05445e;
+  overflow-y: hidden;
+}
+.section-1 .wrapper .head-text {
+  font-size: 7vh;
+  font-family: a;
+  display: inline-block;
+  color: #d4f1f4;
+}
+
+.section-1 .hero-side {
+  background: url(/Resources/img/2_2.png);
+  height: 65vh;
+  width: 30vw;
+  position: relative;
+  left: 10vw;
+  top: 10vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.section-1 .hello {
+  background: url(/Resources/img/2_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 30vh;
+  position: relative;
+  left: 5vw;
+
+  top: 3vh;
+}
+.section-1 .main-text {
+  color: black;
+  font-size: 1vw;
+  height: 80vh;
+}
+
+.section-1 .text {
+  position: relative;
+  top: 25vh;
+  left: 5vw;
+  width: 80%;
+}
+
+/* Section-2 Starts */
+.section-2 {
+  background-color: #05445e;
+  margin: 2vh 0;
+  position: relative;
+  top: -5vh;
+}
+
+.section-2 .head-text {
+  font-size: 6vh;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: 10vh;
+  font-family: a;
+
+  left: 10vh;
+}
+.section-2 .text {
+  color: white;
+  width: 80%;
+  font-size: 2vh;
+  text-align: center;
+  position: relative;
+  top: 15vh;
+  left: 5vh;
+  opacity: 80%;
+}
+.section-2 .text .auto-type-2 {
+  position: relative;
+  width: auto;
+}
+.section-2 .hero-side {
+  background: url(/Resources/img/2_4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 60vh;
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+/* Section-3 Starts */
+.section-3 {
+  position: relative;
+  top: -7vh;
+}
+.section-3 .wrapper {
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
+  background-color: #75e6da;
+  overflow-y: hidden;
+}
+
+.section-3 .wrapper .head-text {
+  font-size: 6vh;
+  font-family: a;
+  text-align: center;
+  display: inline-block;
+}
+.section-3 .subhead-text {
+  font-family: a;
+  position: relative;
+  font-size: 5vh;
+  display: inline;
+}
+.section-3 .wrap {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 15vh;
+}
+.section-3 .hero-side {
+  background: url(/Resources/img/3_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 80vh;
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+}
+.section-3 .text {
+  color: grey;
+  width: 80%;
+  font-size: 2vh;
+  text-align: center;
+  position: relative;
+  left: 10vh;
+  overflow-y: hidden;
+  top: 20vh;
+}
+.section-3 .hero-side2 {
+  background: url(/Resources/img/3_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 75vh;
+  position: relative;
+  width: 80%;
+  top: 3vh;
+  left: 10vh;
+  overflow-y: hidden;
+}
+.section-3 .text2 {
+  color: white;
+  width: 80%;
+  opacity: 70%;
+  font-size: 2vh;
+  text-align: center;
+  position: relative;
+  left: 10vh;
+  overflow-y: hidden;
+  top: 20vh;
+}
+.section-3 .hero-side3 {
+  background: url(/Resources/img/3_3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 75vh;
+  position: relative;
+  width: 80%;
+  top: 3vh;
+  left: 10vh;
+  overflow-y: hidden;
+}
+.section-3 .text3 {
+  color: grey;
+  width: 80%;
+  font-size: 2vh;
+  text-align: center;
+  position: relative;
+  left: 10vh;
+  overflow-y: hidden;
+  top: 20vh;
+}
+/* Section-4 */
+
+.section-4 {
+  overflow-y: hidden;
+  text-align: center;
+}
+.section-4 .wrapper {
+  text-align: center;
+  padding: 3vh;
+  background-color: #05445e;
+  overflow-y: hidden;
+}
+.section-4 .wrapper .head-text {
+  font-size: 7vh;
+  font-family: a;
+  display: inline-block;
+  color: white;
+}
+.section-4 .row .sp-20 {
+  position: relative;
+  top: 10vh;
+}
+.section-4 .subhead-text {
+  font-size: 6vh;
+  color: #d4f1f4;
+  display: inline-block;
+  position: relative;
+  font-family: a;
+  opacity: 93%;
+  background: url(/Resources/img/4_1.png);
+  background-size: 45vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+}
+/* strikethrough animation */
+.strikethrough {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  padding: 0 1vw;
+}
+
+.strikethrough:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 0.3vh;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.6);
+  margin-top: -0.7em;
+  background: white;
+  transform-origin: center left;
+  animation: strikethrough 3s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1;
+  animation-iteration-count: infinite;
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
