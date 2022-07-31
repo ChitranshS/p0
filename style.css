@@ -1,12 +1,12 @@
 @font-face {
   font-family: e;
-  src: url(Fonts/e.otf);
+  src: url(blob/main/Fonts/e.otf);
 
   /* e>c */
 }
 @font-face {
   font-family: a;
-  src: url(Fonts/a1.otf);
+  src: url(blob/main/Fonts/a1.otf);
 }
 /* Landscape section */
 #warning-message {
@@ -20,7 +20,7 @@
     height: 60vh;
   }
   .img {
-    background: url(img/5_1.png);
+    background: url(bolb/main/img/5_1.png);
     background-size: 30vh;
     background-repeat: no-repeat;
     position: relative;
@@ -140,7 +140,7 @@
   flex-direction: row;
 }
 .hero-side .wall {
-  background: url(/img/1_2.png);
+  background: url(blob/main/img/1_2.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
@@ -150,7 +150,7 @@
   animation: wall 2.4s ease-in-out;
 }
 .hero-side .wall2 {
-  background: url(img/1_1.png);
+  background: url(blob/main/img/1_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
