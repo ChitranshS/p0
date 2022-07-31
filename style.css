@@ -140,7 +140,7 @@
   flex-direction: row;
 }
 .hero-side .wall {
-  background: url(img/1_2.png);
+  background: url(blob/main/img/1_2.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
