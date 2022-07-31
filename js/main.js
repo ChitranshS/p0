@@ -79,13 +79,6 @@ $(document).ready(function () {
     }
   });
 });
-
-var text = {
-  strings: ["Write It Up!"],
-  typeSpeed: 125,
-};
-
-var Typed = new Typed(".auto-type-1", text);
 const toastTrigger = document.getElementById("liveToastBtn");
 const toastLiveExample = document.getElementById("liveToast");
 if (toastTrigger) {
@@ -110,3 +103,9 @@ const popoverTriggerList = document.querySelectorAll(
 const popoverList = [...popoverTriggerList].map(
   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
 );
+
+var Typed = new Typed("#auto-type-1", {
+  strings: ["Write It Up!"],
+  typeSpeed: 125,
+});
+Typed.start();

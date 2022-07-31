@@ -122,7 +122,7 @@
   overflow-y: hidden;
 }
 
-.hero-text .auto-type-1 {
+.hero-text #auto-type-1 {
   position: relative;
   width: auto;
   font-family: e;
