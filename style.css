@@ -1,12 +1,12 @@
 @font-face {
   font-family: e;
-  src: url(/Fonts/e.otf);
+  src: url(Fonts/e.otf);
 
   /* e>c */
 }
 @font-face {
   font-family: a;
-  src: url(/Fonts/a1.otf);
+  src: url(Fonts/a1.otf);
 }
 /* Landscape section */
 #warning-message {
@@ -20,7 +20,7 @@
     height: 60vh;
   }
   .img {
-    background: url(/img/5_1.png);
+    background: url(img/5_1.png);
     background-size: 30vh;
     background-repeat: no-repeat;
     position: relative;
@@ -140,7 +140,7 @@
   flex-direction: row;
 }
 .hero-side .wall {
-  background: url(/img/1_2.png);
+  background: url(img/1_2.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
@@ -150,7 +150,7 @@
   animation: wall 2.4s ease-in-out;
 }
 .hero-side .wall2 {
-  background: url(/img/1_1.png);
+  background: url(img/1_1.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
@@ -212,7 +212,7 @@
   background-repeat: no-repeat;
 }
 .section-1 .hello {
-  background: url(/img/2_3.png);
+  background: url(img/2_3.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 30vh;
@@ -268,7 +268,7 @@
   width: auto;
 }
 .section-2 .hero-side {
-  background: url(/img/2_4.png);
+  background: url(img/2_4.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -310,7 +310,7 @@
   top: 15vh;
 }
 .section-3 .hero-side {
-  background: url(/img/3_1.png);
+  background: url(img/3_1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -330,7 +330,7 @@
   top: 20vh;
 }
 .section-3 .hero-side2 {
-  background: url(/img/3_2.png);
+  background: url(img/3_2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
@@ -353,7 +353,7 @@
   top: 20vh;
 }
 .section-3 .hero-side3 {
-  background: url(/img/3_3.png);
+  background: url(img/3_3.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -403,7 +403,7 @@
   position: relative;
   font-family: a;
   opacity: 93%;
-  background: url(/img/4_1.png);
+  background: url(img/4_1.png);
   background-size: 45vh;
   background-repeat: no-repeat;
   background-position: bottom;
