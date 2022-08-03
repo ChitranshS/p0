@@ -9,5 +9,4 @@ present in the existing character set and then creating a font out of it in user
 #### For animate css you can visit www.animate.style
 
 ## Here's a preview
-
-![preview](https://user-images.githubusercontent.com/94716677/182565419-380cf2c1-7c1a-4535-ab11-5532bedf04db.png)
+<img width="400" alt="preview" src="https://user-images.githubusercontent.com/94716677/182567651-1cab645e-d259-404f-a4de-d9baf5e5711a.png">
